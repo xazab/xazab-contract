@@ -1,7 +1,7 @@
 const { expect } = require('chai');
-const DashPlatformProtocol = require('@dashevo/dpp');
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const schema = require('./dashpay.schema');
+const XazabPlatformProtocol = require('@xazab/dpp');
+const generateRandomIdentifier = require('@xazab/dpp/lib/test/utils/generateRandomIdentifier');
+const schema = require('./xazab.schema');
 
 const whitepaperMasternodeText = 'Full nodes are servers running on a P2P network that allow peers to use them to receive updates about the events on the network. These nodes utilize significant amounts of traffic and other resources that incur a substantial cost. As a result, a steady decrease in the amount of these nodes has been observed for some time on the Bitcoin network and as a result, block propagation times have been upwards of 40 seconds. Many solutions have been proposed such as a new reward scheme by Microsoft Research and the Bitnodes incentive program';
 const encoded32Chars = '4fafc98bbfe597f7ba2c9f767d52036d';
@@ -16,7 +16,7 @@ const filteredObject = (inputObj) => {
     .fromEntries(filteredEntries);
 };
 
-describe('Dashpay Contract', () => {
+describe('Xazabpay Contract', () => {
   let dpp;
   let contract;
   let identityId;
@@ -24,7 +24,7 @@ describe('Dashpay Contract', () => {
   beforeEach(function beforeEach() {
     const fetchContractStub = this.sinon.stub();
 
-    dpp = new DashPlatformProtocol({
+    dpp = new XazabPlatformProtocol({
       stateRepository: {
         fetchDataContract: fetchContractStub,
       },
@@ -48,7 +48,7 @@ describe('Dashpay Contract', () => {
       beforeEach(() => {
         profileData = {
           displayName: 'Bob',
-          publicMessage: 'Hello Dashpay!',
+          publicMessage: 'Hello Xazabpay!',
         };
       });
       describe('displayName', () => {
@@ -118,7 +118,7 @@ describe('Dashpay Contract', () => {
           }
         });
         it('should have less than 2048 chars length', async () => {
-          profileData.avatarUrl = `https://github.com/dashpay/dash/wiki/Whitepaper?text=${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}`;
+          profileData.avatarUrl = `https://github.com/xazab/xazab/wiki/Whitepaper?text=${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}${encodeURI(whitepaperMasternodeText)}`;
 
           try {
             dpp.document.create(contract, identityId, 'profile', profileData);

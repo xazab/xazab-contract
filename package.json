@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/dashpay-contract",
+  "name": "@xazab/xazab-contract",
   "version": "1.0.0",
-  "description": "Reference contract of the DashPay DPA on Dash Evolution",
+  "description": "Reference contract of the Xazab DPA on Xazab Evolution",
   "scripts": {
     "check-package": "npm run check-package:name && npm run check-package:version",
     "check-package:name": "test $(jq -r .name package.json) = $(jq -r .name package-lock.json)",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/dashpay-contract.git"
+    "url": "git+https://github.com/xazab/xazab-contract.git"
   },
-  "author": "Dash Core Team",
+  "author": "Xazab Core Team",
   "contributors": [
     {
       "name": "Alex Werner",
@@ -24,12 +24,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/dashpay-contract/issues"
+    "url": "https://github.com/xazab/xazab-contract/issues"
   },
-  "homepage": "https://github.com/dashevo/dashpay-contract#readme",
+  "homepage": "https://github.com/xazab/xazab-contract#readme",
   "devDependencies": {
-    "@dashevo/dapi-client": "^0.16.0",
-    "@dashevo/dpp": "^0.17.0-dev.2",
+    "@xazab/dapi-client": "^0.16.0",
+    "@xazab/dpp": "^0.17.0-dev.2",
     "chai": "^4.2.0",
     "dirty-chai": "^2.0.1",
     "eslint": "^7.7.0",

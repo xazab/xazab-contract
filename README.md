@@ -1,15 +1,15 @@
-# DashPay Contract
+# Xazab Contract
 
-[![NPM Version](https://img.shields.io/npm/v/@dashevo/dashpay-contract)](https://www.npmjs.com/package/@dashevo/dashpay-contract)
-[![Build Status](https://travis-ci.com/dashevo/dashpay-contract.svg?branch=master)](https://travis-ci.com/dashevo/dashpay-contract)
-[![Release Date](https://img.shields.io/github/release-date/dashevo/dashpay-contract)](https://github.com/dashevo/dashpay-contract/releases/latest)
-[![license](https://img.shields.io/github/license/dashevo/dashpay-contract.svg)](LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/@xazab/xazab-contract)](https://www.npmjs.com/package/@xazab/xazab-contract)
+[![Build Status](https://travis-ci.com/xazab/xazab-contract.svg?branch=master)](https://travis-ci.com/xazab/xazab-contract)
+[![Release Date](https://img.shields.io/github/release-date/xazab/xazab-contract)](https://github.com/xazab/xazab-contract/releases/latest)
+[![license](https://img.shields.io/github/license/xazab/xazab-contract.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
-> Reference contract of the DashPay Application Contract 
+> Reference contract of the Xazab Application Contract 
 
-DashPay allows Dash user to create a DashPay profile on the Platform chain.   
-This profile can be used to interact with other DashPay profiles, may it be for the purpose of sending/receiving transactions without having to go around the process of querying the public address of the recipient.  
+Xazab allows Xazab user to create a Xazab profile on the Platform chain.   
+This profile can be used to interact with other Xazab profiles, may it be for the purpose of sending/receiving transactions without having to go around the process of querying the public address of the recipient.  
 
 ## Table of Contents
 - [Install](#install)
@@ -27,7 +27,7 @@ Ensure you have the latest [NodeJS](https://nodejs.org/en/download/) installed.
 Clone the repo:
 
 ```shell
-git clone https://github.com/dashevo/dashpay-contract
+git clone https://github.com/xazab/xazab-contract
 ```
 
 Install npm packages:
@@ -39,7 +39,7 @@ npm install
 #### From NPM
 
 ```sh
-npm install @dashevo/dashpay-contract
+npm install @xazab/xazab-contract
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ npm test
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/dashpay-contract/issues/new/choose) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/xazab/xazab-contract/issues/new/choose) or submit PRs.
 
 ## Licence
 

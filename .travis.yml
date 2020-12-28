@@ -37,4 +37,4 @@ deploy:
   script: bash bin/travis-deploy.sh
   on:
     tags: true
-    repo: dashevo/dashpay-contract
+    repo: xazab/xazab-contract
